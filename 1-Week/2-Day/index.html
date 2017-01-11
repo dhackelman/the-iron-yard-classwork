@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <title>Pizza Site</title>
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+  <div class="container">
+    <header class="circle">
+      <img class="logo" src="images/pizza-icon.png" alt="scary-slice">
+      <h1>Pizza Pizza</h1>
+    </header>
+    <main>
+      <table>
+        <tr tabindex="0">
+          <td>Sunday-Tuesday</td>
+          <td>12:00pm-11:00pm</td>
+        </tr>
+        <tr tabindex="0">
+          <td>Wednesday-Thursday</td>
+          <td>12:00pm-12:00am</td>
+        </tr>
+        <tr tabindex="0">
+          <td>Friday-Saturday</td>
+          <td>12:00pm-3:00am</td>
+        </tr>
+        <tr tabindex="0">
+          <td>Thanksgiving</td>
+          <td>12:00am-11:59pm</td>
+        </tr>
+      </table>
+      <hr>
+      <form autocomplete="off" action="http://requestb.in/199sro31" method="post">
+        <fieldset>
+          <legend>Victim Information</legend>
+          <label for="customer name">Name</label>
+          <input id="customer name" type="text" placeholder="Your Name" name="customer name"required>
+
+          <label for="customer address">Address</label>
+          <input id="customer address" type="text" placeholder="Your Address" name="customer address"required>
+
+          <label for="customer zipcode">Zipcode</label>
+          <input id="customer zipcode" type="text" placeholder="Zipcode" maxlength="5" name="customer zipcode"required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Order Details</legend>
+          <label for="pizza-size">Pizza Size</label>
+          <select id="pizza-size" name="pizza slice">
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>Family Size</option>
+          </select>
+
+          <label for="pizza-quantity"># of Pizzas?</label>
+          <input id="pizza-quantity" value="1" type="number" min="1" max="15" name="quantity">
+
+          <fieldset>
+            <legend>Toppings</legend>
+            <label for="pepperoni">Pepperoni?</label>
+            <input id="pepperoni" type="checkbox" name="pepperoni">
+            <label for="bacon">Bacon?</label>
+            <input id="bacon" type="checkbox" name="pepperoni">
+            <label for="anchovies">Anchovies?</label>
+            <input id="anchovies" type="checkbox" name="pepperoni">
+            <label for="canadian-bacon">Canadian Bacon?</label>
+            <input id="canadian-bacon" type="checkbox" name="pepperoni">
+          </fieldset>
+        </fieldset>
+        <label for="special-instructions">Special Instructions</label>
+        <textarea id="special-instructions" rows="10" cols="150" name="instructions"></textarea>
+
+        <input type="submit" value="Place Order">
+    </main>
+    <footer>
+      <img class="logo" src="images/pizza-icon.png" alt="scary-slice">
+      <span>&copy;2017</span>
+    </footer>
+  </div>
+</body>
+</html>

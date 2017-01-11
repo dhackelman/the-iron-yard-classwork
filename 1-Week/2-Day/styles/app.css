@@ -1,0 +1,61 @@
+body {
+  background-color: #fbd043;
+  background-image: url("../images/Pepperoni.png");
+  background-repeat: round;
+
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #fbd043;
+  margin: auto;
+  border: 3px solid black;
+}
+
+.header {
+    background-color: black;
+    color: red;
+}
+
+header .logo {
+  width: 200px;
+  margin-top: 50px;
+  margin-bottom: -50px;
+  background-color: #fbd043;
+}
+
+footer .logo {
+  width: 50px;
+  margin-right: -5px;
+  margin-left: 10px;
+  background-color: #fbd043;
+}
+
+header {
+  text-align: center;
+}
+
+main, footer {
+  background-color: white;
+  opacity: 0.75;
+  margin: auto;
+  width: 80%;
+}
+table {
+  margin: auto;
+  width: 75%;
+}
+
+tr: nth-child(odd) {
+  background: #ccc;
+}
+
+tr:nth-child(even) {
+  background: #aaa;
+}
+
+tr:focus {
+  color: red;
+}
